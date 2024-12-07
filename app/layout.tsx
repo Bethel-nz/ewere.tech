@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Inter } from 'next/font/google';
+import { JetBrains_Mono } from 'next/font/google';
 import "./globals.css";
+import { ThemeWrapper } from '@/components/theme/theme-wrapper';
+import { Footer } from '@/components/footer';
+import { ThemeToggle } from '@/components/theme/theme-toggle';
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains-mono',
 });
 
 export const metadata: Metadata = {
@@ -24,11 +27,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${jetbrainsMono.variable} font-mono antialiased`}
       >
-        {children}
+        <ThemeWrapper>
+          <div className="px-4 py-8">
+            <div className="max-w-screen-md mx-auto min-h-dvh">
+              <div className="flex justify-end mb-8">
+                <ThemeToggle />
+              </div>
+              {children}
+            </div>
+          </div>
+          <Footer />
+        </ThemeWrapper>
       </body>
     </html>
   );
