@@ -25,6 +25,19 @@ export async function generateMetadata({ params }: ArticlePageProps) {
 	return {
 		title: article.title,
 		description: article.description,
+		openGraph: {
+			title: article.title,
+			description: article.description,
+			type: "article",
+			publishedTime: article.date,
+			authors: ["Ewere Diagboya"],
+			tags: article.tags,
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: article.title,
+			description: article.description,
+		},
 	};
 }
 

@@ -2,6 +2,7 @@
 
 import { motion } from 'motion/react';
 import Link from 'next/link';
+import siteConfig from '@/app/metadata';
 
 export function SocialLinks() {
 	return (
@@ -12,7 +13,7 @@ export function SocialLinks() {
 		>
 			<div className="flex gap-3 items-center mt-4">
 				<Link
-					href="#"
+					href={siteConfig.links.linkedin}
 					className="text-muted-foreground hover:text-primary transition-colors"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -26,7 +27,7 @@ export function SocialLinks() {
 				</Link>
 
 				<Link
-					href="#"
+					href={siteConfig.links.twitter}
 					className="text-muted-foreground hover:text-primary transition-colors"
 					target="_blank"
 					rel="noopener noreferrer"
@@ -40,7 +41,7 @@ export function SocialLinks() {
 				</Link>
 
 				<Link
-					href="#"
+					href={siteConfig.links.medium}
 					className="text-muted-foreground hover:text-primary transition-colors"
 					target="_blank"
 					rel="noopener noreferrer"
