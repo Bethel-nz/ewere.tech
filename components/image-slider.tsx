@@ -12,7 +12,7 @@ const images = [
 ];
 
 export function ImageSlider() {
-	const [currentIndex, setCurrentIndex] = useState(0);
+	const [/*currentIndex*/, setCurrentIndex] = useState(0);
 	const [isDialogOpen, setIsDialogOpen] = useState(false);
 	const dialogRef = useRef<HTMLDialogElement>(null);
 
@@ -42,7 +42,6 @@ export function ImageSlider() {
 				<AnimatePresence mode="wait" initial={false}>
 					<div className="absolute inset-0">
 						<motion.div
-							key={currentIndex}
 							initial={{ opacity: 0, scale: 1.1 }}
 							animate={{ opacity: 1, scale: 1 }}
 							exit={{ opacity: 0, scale: 0.95 }}
@@ -52,7 +51,7 @@ export function ImageSlider() {
 							}}
 						>
 							<Image
-								src={images[currentIndex]}
+								src={images[1]}
 								alt="Ewere Diagboya"
 								width={140}
 								height={140}
@@ -76,7 +75,7 @@ export function ImageSlider() {
 					onClick={(e) => e.stopPropagation()}
 				>
 					<Image
-						src={images[currentIndex]}
+						src={images[1]}
 						alt="Ewere Diagboya"
 						fill
 						className="object-contain rounded-lg"

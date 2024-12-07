@@ -25,25 +25,29 @@ export function Bio() {
 			<div className="space-y-2 text-base">
 				<p className="text-muted-foreground leading-relaxed">
 					First AWS Community Hero in Africa and AWS Community Leader in Nigeria. Author of{' '}
-					<Link
-						href="https://www.packtpub.com/en-us/product/infrastructure-monitoring-with-amazon-cloudwatch-9781800566057"
-						className="text-primary hover:underline inline-flex items-center gap-0.5"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Infrastructure Monitoring with Amazon CloudWatch
-						<span className="text-xs">↗</span>
-					</Link>
+					<span className="inline-block">
+						<Link
+							href="https://www.packtpub.com/en-us/product/infrastructure-monitoring-with-amazon-cloudwatch-9781800566057"
+							className="text-primary hover:underline inline-flex items-center gap-0.5"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Infrastructure Monitoring with Amazon CloudWatch
+							<span className="text-xs">↗</span>
+						</Link>
+					</span>
 					{' '}and{' '}
-					<Link
-						href="https://www.amazon.co.uk/Techtionary-dictionary-simplified-meaning-words-ebook/dp/B0BTJDWKRF"
-						className="text-primary hover:underline inline-flex items-center gap-0.5"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Techtionary
-						<span className="text-xs">↗</span>
-					</Link>
+					<span className="inline-block">
+						<Link
+							href="https://www.amazon.co.uk/Techtionary-dictionary-simplified-meaning-words-ebook/dp/B0BTJDWKRF"
+							className="text-primary hover:underline inline-flex items-center gap-0.5"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Techtionary
+							<span className="text-xs">↗</span>
+						</Link>
+					</span>.
 				</p>
 
 				<p className="text-muted-foreground leading-relaxed">
