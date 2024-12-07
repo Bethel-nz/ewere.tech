@@ -26,22 +26,20 @@ export function Bio() {
 					First AWS Community Hero in Africa and AWS Community Leader in Nigeria. Author of
 					<a
 						href="https://www.packtpub.com/en-us/product/infrastructure-monitoring-with-amazon-cloudwatch-9781800566057"
-						className="ml-2 text-primary hover:underline inline-flex items-center"
+						className="ml-2 text-primary hover:underline w-fit"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
 						Infrastructure Monitoring with Amazon CloudWatch
-						<span className="text-xs ml-0.5">↗</span>
 					</a>
 					{" "} and {" "}
 					<a
 						href="https://www.amazon.co.uk/Techtionary-dictionary-simplified-meaning-words-ebook/dp/B0BTJDWKRF"
-						className="text-primary hover:underline inline-flex items-center"
+						className="text-primary hover:underline w-fit "
 						target="_blank"
 						rel="noopener noreferrer"
 					>
 						Techtionary
-						<span className="text-xs ml-0.5">↗</span>
 					</a>
 					.
 				</p>
