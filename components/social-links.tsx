@@ -11,7 +11,7 @@ export function SocialLinks() {
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.5, delay: 0.3 }}
 		>
-			<div className="flex gap-3 items-center mt-4">
+			<div className="flex gap-3 items-center">
 				<Link
 					href={siteConfig.links.linkedin}
 					className="text-muted-foreground hover:text-primary transition-colors"

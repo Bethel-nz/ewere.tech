@@ -17,7 +17,9 @@ export function Bio() {
 				<div className="pt-2 self-end">
 					<h1 className="font-sans text-xl mb-1 font-bold">Hey, I&apos;m Ewere.</h1>
 					<p className="text-base text-muted-foreground">Cloud & DevOps Expert.</p>
+					<span className=" mt-4">
 					<SocialLinks />
+					</span>
 				</div>
 			</div>
 

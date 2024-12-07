@@ -11,11 +11,15 @@ export function Footer() {
 			transition={{ delay: 0.2 }}
 		>
 			<footer className="mt-24 pb-8 border-t">
-				<div className="max-w-screen-md mx-auto px-4 pt-8 flex items-center justify-between">
-					<span>
-					<SocialLinks />
-					</span>
-					<span> &copy; 2024 Ewere Diagboya</span>
+				<div className="max-w-screen-md mx-auto px-4 pt-8">
+					<div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+						<div className="order-2 sm:order-1">
+							<SocialLinks />
+						</div>
+						<div className="order-1 sm:order-2 text-sm text-muted-foreground">
+							&copy; 2024 Ewere Diagboya
+						</div>
+					</div>
 				</div>
 			</footer>
 		</motion.div>
