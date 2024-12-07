@@ -25,7 +25,7 @@ export default function Home() {
         </div>
 
         <div className="space-y-8">
-          {latestArticles.map((article) => (
+          {latestArticles && latestArticles.map((article) => (
             <ArticlePreview
               key={article.slug}
               title={article.title}
